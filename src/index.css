@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+}
+.Wrapper{
+  max-width: 700px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #F1F1F1;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+}
+
+.CreateUserBlock {
+  display: flex;
+  padding: 32px 8px 32px 8px;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  border-bottom: #cccccc  solid 1px; 
+}
+.UserCard{
+  padding: 24px;
+}
+
+.UserCardTitle{
+  text-align: center;
+  font-size: 26px;
+}
+.UserCardText{
+  display: flex;
+  flex-direction: column;
+
+  margin: 36px 0;
+
+}
