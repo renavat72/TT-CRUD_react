@@ -6,7 +6,7 @@ const {ApolloServer} = require('apollo-server-express');
 const typeDefs = require ('./typeDefs')
 const resolvers = require ('./resolvers')
 
-mongoose.connect("mongodb+srv://Renavat:LQX12ylD0ctNa8bq@cluster0.8t8ek.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
+mongoose.connect(process.env.MONGODB,{
     useNewUrlParser: true,
     useUnifiedTopology: true,})
   .then(()=>{
